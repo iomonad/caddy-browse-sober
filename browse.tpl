@@ -115,8 +115,8 @@
   <body>
 
     <table>
-      <tr><td><img src="https://git.trosa.io/logo.png" alt="" width="32" height="32" /></td>
-	<td><span class="desc">File Server // {{.RemoteIP}}</span></td></tr><tr><td></td><td>
+      <tr><td><a href="/"><img src="https://git.trosa.io/logo.png" alt="" width="32" height="32" /></a></td>
+	<td><span class="desc">File Server / <a href="https:/trosa.io/">~</a> / <a href="https:/git.trosa.io/">git</a></span></td></tr><tr><td></td><td>
       </td></tr>
     </table>
       </hr>
@@ -128,14 +128,12 @@
 	    {{end}}
 	    {{range .Items}}
 	      {{if .IsDir}}
-	      <td><a href="{{.URL}}">{{.Name}}</a></td><td>-</td><td>d</td><td>{{.ModTime}}</td></tr><tr>
+	      <td><a href="{{.URL}}">{{.Name}}</a></td><td>-</td><td>d</td><td>{{.HumanModTime "2006.02.01 15:04:05" }}</td></tr><tr>
               {{else}}
-	      <td><a href="{{.URL}}">{{.Name}}</a></td><td>{{.Size}}</td><td>f</td><td>{{.ModTime}}</td></tr><tr>
+	      <td><a href="{{.URL}}">{{.Name}}</a></td><td>{{.Size}}</td><td>f</td><td>{{.HumanModTime "2006.02.01 15:04:05" }}</td></tr><tr>
               {{end}}
             {{end}}
         </table>
       </div>
      </body>
-     <script>
-     </script>
 </html>
