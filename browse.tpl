@@ -116,7 +116,7 @@
 
     <table>
       <tr><td><a href="/"><img src="https://git.trosa.io/logo.png" alt="" width="32" height="32" /></a></td>
-	<td><span class="desc">File Server / <a href="https:/trosa.io/">~</a> / <a href="https:/git.trosa.io/">git</a></span></td></tr><tr><td></td><td>
+	<td><span class="desc">File Server / <a href="https://trosa.io/">~</a> / <a href="https://git.trosa.io/">git</a></span></td></tr><tr><td></td><td>
       </td></tr>
     </table>
       </hr>
